@@ -2,23 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package co.edu.udistrital.dasp.DTOs;
+package co.edu.udistrital.dasp.model.DTOs;
 
 /**
  *
  * @author Laura
  */
-public class DebitDTO {
+public class CreditDTO {
     private Long id;
-    private double balance;
+    private double quota;
+    private double debt;
     private CardDTO card;
 
-    public DebitDTO() {
+    public CreditDTO() {
     }
 
-    public DebitDTO(Long id, double balance, CardDTO card) {
+    public CreditDTO(Long id, double quota, double debt, CardDTO card) {
         this.id = id;
-        this.balance = balance;
+        this.quota = quota;
+        this.debt = debt;
         this.card = card;
     }
     
@@ -31,12 +33,20 @@ public class DebitDTO {
         this.id = id;
     }
 
-    public double getBalance() {
-        return balance;
+    public double getQuota() {
+        return quota;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setQuota(double quota) {
+        this.quota = quota;
+    }
+
+    public double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(double debt) {
+        this.debt = debt;
     }
 
     public CardDTO getCard() {
@@ -46,7 +56,5 @@ public class DebitDTO {
     public void setCard(CardDTO card) {
         this.card = card;
     }
-    
-    
     
 }

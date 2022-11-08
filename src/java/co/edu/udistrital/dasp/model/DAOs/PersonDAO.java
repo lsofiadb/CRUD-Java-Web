@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.udistrital.dasp.DAOs;
+package co.edu.udistrital.dasp.model.DAOs;
 
-import co.edu.udistrital.dasp.DTOs.PersonDTO;
+import co.edu.udistrital.dasp.model.DTOs.PersonDTO;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -24,7 +24,7 @@ public class PersonDAO {
             while(rs.next()){
                 PersonDTO user = new PersonDTO();
                 user.setId(rs.getLong("CC"));
-                user.setName(rs.getString("personName"));
+                user.setName(rs.getString("personName"));   
                 user.setLastname(rs.getString("lastName"));
                 user.setAddress(rs.getString("address"));
                 user.setEmail(rs.getString("email"));

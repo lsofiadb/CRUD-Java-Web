@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/src/java/co/edu/udistrital/dasp/DTOs/PersonDTO.java</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/web/JSPs/GetPersonList.jsp</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/web/index.jsp</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/nbproject/build-impl.xml</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/web/WEB-INF/web.xml</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/src/java/co/edu/udistrital/dasp/controllers/PersonController.java</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/src/java/co/edu/udistrital/dasp/utils/ConexionBDs.java</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/src/java/co/edu/udistrital/dasp/DAOs/PersonDAO.java</file>
+            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/controllers/PersonController.java</file>
+            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/model/DAOs/PersonDAO.java</file>
+            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/utils/ConexionBDs.java</file>
         </group>
     </open-files>
 </project-private>

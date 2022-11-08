@@ -6,8 +6,8 @@
 package co.edu.udistrital.dasp.controllers;
 
 import co.edu.udistrital.dasp.utils.ConexionBDs;
-import co.edu.udistrital.dasp.DAOs.PersonDAO;
-import co.edu.udistrital.dasp.DTOs.PersonDTO;
+import co.edu.udistrital.dasp.model.DAOs.PersonDAO;
+import co.edu.udistrital.dasp.model.DTOs.PersonDTO;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.ServletException;

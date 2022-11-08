@@ -4,7 +4,7 @@
     Author     : nixod
 --%>
 
-<%@page import="co.edu.udistrital.dasp.DTOs.PersonDTO"%>
+<%@page import="co.edu.udistrital.dasp.model.DTOs.PersonDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
