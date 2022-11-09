@@ -15,42 +15,42 @@ public class ConcreteFactoryDTO extends AbstractFactory{
     public DTO getObject(String name) {
         DTO dto = null;
         switch (name) {
-            case "AccountDAO": {
+            case "AccountDTO": {
                 dto = new AccountDTO();
                 break;
             }
 
-            case "BankDAO": {
+            case "BankDTO": {
                 dto = new BankDTO();
                 break;
             }
 
-            case "CardDAO": {
+            case "CardDTO": {
                 dto = new CardDTO();
                 break;
             }
             
-            case "CategoryDAO":{
+            case "CategoryDTO":{
                 dto = new CategoryDTO();
                 break;
             }
             
-            case "CreditDAO":{
+            case "CreditDTO":{
                 dto = new CreditDTO();
                 break;
             }
             
-            case "DebitDAO":{
+            case "DebitDTO":{
                 dto = new DebitDTO();
                 break;
             }
             
-            case "PersonDAO":{
+            case "PersonDTO":{
                 dto = new PersonDTO();
                 break;
             }
             
-            case "TransactionDAO": {
+            case "TransactionDTO": {
                 dto = new TransactionDTO();
                 break;
             }
