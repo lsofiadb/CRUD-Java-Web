@@ -4,8 +4,12 @@
  */
 package co.edu.udistrital.dasp.model.DAOs;
 
+import co.edu.udistrital.dasp.model.DTOs.BankDTO;
 import co.edu.udistrital.dasp.model.DTOs.DTO;
+import co.edu.udistrital.dasp.model.DTOs.PersonDTO;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Vector;
 
 /**
@@ -24,7 +28,20 @@ public class BankDAO implements DAO, Iterator{
 
     @Override
     public DTO insertRecord(Connection connection, DTO entity) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        BankDTO bank = new BankDTO();
+        bank.setId(1L);
+        bank.setName("Scotiabank");
+        try {
+
+            String sql = "insert into bank (id, bankName) VALUES (?, ?) ;";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setLong(1, bank.getId());
+            statement.setString(2, bank.getName());
+
+        } catch (SQLException ex) {
+            System.out.println("ERROR" + ex);
+        }
+        return bank;
     }
 
     @Override
