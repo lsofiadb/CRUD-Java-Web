@@ -44,7 +44,7 @@ public class PersonDAO implements DAO, Iterator {
     }
 
     @Override
-    public Vector getRecords(Connection connecction) {
+    public Vector getRecords(Connection connecction) { //TO-DO according to Iterator implementation 
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

@@ -20,6 +20,19 @@ public class PersonDTO implements DTO{
     private String address;
     private String email;
     private String password;
+
+    public PersonDTO(Long id, String name, String lastname, String address, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.lastname = lastname;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+    }
+
+    public PersonDTO() {
+    }
+    
     
     
     /* GETTERS AND SETTERS*/
