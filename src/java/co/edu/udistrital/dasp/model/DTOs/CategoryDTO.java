@@ -49,7 +49,7 @@ public class CategoryDTO implements DTO{
 
     @Override
     public String getData() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "CategoryDTO{" + "id=" + id + ", name=" + name + ", description=" + description + '}';
     }
     
 }

@@ -59,7 +59,7 @@ public class CreditDTO implements DTO{
 
     @Override
     public String getData() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "CreditDTO{" + "id=" + id + ", quota=" + quota + ", debt=" + debt + ", card=" + card + '}';
     }
     
 }

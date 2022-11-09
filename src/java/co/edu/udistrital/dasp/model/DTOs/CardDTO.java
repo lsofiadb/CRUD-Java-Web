@@ -71,7 +71,7 @@ public class CardDTO implements DTO{
 
     @Override
     public String getData() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "CardDTO{" + "id=" + id + ", cvc=" + cvc + ", number=" + number + ", expiration_date=" + expiration_date + ", account=" + account + '}';
     }
     
     

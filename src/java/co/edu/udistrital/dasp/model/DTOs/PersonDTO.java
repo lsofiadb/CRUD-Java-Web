@@ -66,6 +66,6 @@ public class PersonDTO implements DTO{
 
     @Override
     public String getData() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+           return "PersonDTO{" + "id=" + id + ", name=" + name + ", lastname=" + lastname + ", address=" + address + ", email=" + email + ", password=" + password + '}';
+    }    
 }

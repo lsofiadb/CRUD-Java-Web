@@ -60,7 +60,7 @@ public class AccountDTO implements DTO{
 
     @Override
     public String getData() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "AccountDTO{" + "id=" + id + ", number=" + number + ", password=" + password + ", owner=" + owner + '}';
     }
     
 }

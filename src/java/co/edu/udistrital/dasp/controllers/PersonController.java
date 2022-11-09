@@ -31,6 +31,8 @@ public class PersonController extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
+    public State state;
+    
     protected  void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //response.setContentType("text/html;charset=UTF-8");
@@ -91,5 +93,20 @@ public class PersonController extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
+    
+    public void changeState(){
+        //query to database... TO-DO
+        //verify username and password TO-DO
+        //if it's ok then Logged
+        boolean decision = false; //change this according to query result status
+        
+        PersonDTO personDTO = new PersonDTO();
+        if(decision){
+            state = new Logged();
+            state.showData(personDTO);
+        }else{ // if it's not then notlogged
+            state = new NotLogged();
+            state.showData(null);
+        }
+    }
 }
