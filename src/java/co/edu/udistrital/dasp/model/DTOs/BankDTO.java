@@ -8,7 +8,7 @@ package co.edu.udistrital.dasp.model.DTOs;
  *
  * @author Laura
  */
-public class BankDTO {
+public class BankDTO implements DTO {
     private Long id;
     private String name;
 
@@ -35,6 +35,11 @@ public class BankDTO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

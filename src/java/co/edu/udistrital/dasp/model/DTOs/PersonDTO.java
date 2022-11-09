@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author Laura
  */
-public class PersonDTO {
+public class PersonDTO implements DTO{
     private Long id;
     private String name;
     private String lastname;
@@ -63,4 +63,9 @@ public class PersonDTO {
     public void setAddress(String address) {
         this.address = address;
     } 
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

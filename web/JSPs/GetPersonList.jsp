@@ -7,6 +7,12 @@
 <%@page import="co.edu.udistrital.dasp.model.DTOs.PersonDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<style>
+.colorcito{
+    color: red;
+    background-color: yellow;
+}
+</style>    
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +20,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>:: LISTA USUARIOS::</h1>
+        <h1 class="colorcito">:: LISTA USUARIOS::</h1>
         <% 
            String nombre = (String) request.getAttribute("student");
            ArrayList<PersonDTO> lista = (ArrayList<PersonDTO>) request.getAttribute("listaP");

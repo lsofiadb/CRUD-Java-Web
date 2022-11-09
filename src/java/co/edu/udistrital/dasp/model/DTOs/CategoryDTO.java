@@ -8,7 +8,7 @@ package co.edu.udistrital.dasp.model.DTOs;
  *
  * @author Laura
  */
-public class CategoryDTO {
+public class CategoryDTO implements DTO{
     private Long id;
     private String name;
     private String description;
@@ -45,6 +45,11 @@ public class CategoryDTO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

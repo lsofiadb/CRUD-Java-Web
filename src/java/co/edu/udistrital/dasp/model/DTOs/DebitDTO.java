@@ -8,7 +8,7 @@ package co.edu.udistrital.dasp.model.DTOs;
  *
  * @author Laura
  */
-public class DebitDTO {
+public class DebitDTO implements DTO{
     private Long id;
     private double balance;
     private CardDTO card;
@@ -45,6 +45,11 @@ public class DebitDTO {
 
     public void setCard(CardDTO card) {
         this.card = card;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

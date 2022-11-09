@@ -8,7 +8,7 @@ package co.edu.udistrital.dasp.model.DTOs;
  *
  * @author Laura
  */
-public class CreditDTO {
+public class CreditDTO implements DTO{
     private Long id;
     private double quota;
     private double debt;
@@ -55,6 +55,11 @@ public class CreditDTO {
 
     public void setCard(CardDTO card) {
         this.card = card;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

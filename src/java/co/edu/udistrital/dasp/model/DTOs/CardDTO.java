@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author Laura
  */
-public class CardDTO {
+public class CardDTO implements DTO{
     private Long id;
     private Long cvc;
     private Long number;
@@ -67,6 +67,11 @@ public class CardDTO {
 
     public void setAccount(AccountDTO account) {
         this.account = account;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

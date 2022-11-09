@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author Laura
  */
-public class TransactionDTO {
+public class TransactionDTO implements DTO{
     private Long id;
     private Date date;
     private double amount;
@@ -79,6 +79,11 @@ public class TransactionDTO {
 
     public void setCategory(CategoryDTO category) {
         this.category = category;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

@@ -8,7 +8,7 @@ package co.edu.udistrital.dasp.model.DTOs;
  *
  * @author Laura
  */
-public class AccountDTO {
+public class AccountDTO implements DTO{
     
     private Long id;
     private Long number;
@@ -56,6 +56,11 @@ public class AccountDTO {
 
     public void setOwner(PersonDTO owner) {
         this.owner = owner;
+    }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
