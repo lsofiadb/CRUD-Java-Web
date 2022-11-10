@@ -2,10 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/controllers/PersonController.java</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/model/DAOs/PersonDAO.java</file>
-            <file>file:/C:/UNDECIMO%20SEMESTRE/PATRONES/PROYECTO%20JAVA/proyecto_DAPS/CRUD-Java-Web/src/java/co/edu/udistrital/dasp/utils/ConexionBDs.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -19,7 +19,7 @@ import java.util.Vector;
  *
  * @author Laura
  */
-public class PersonDAO implements DAO, Iterator {
+public class PersonDAO implements DAO {
 
     public ArrayList<PersonDTO> getPersonsList(Connection connection) {
         ArrayList<PersonDTO> personsList = new ArrayList();
@@ -123,18 +123,4 @@ public class PersonDAO implements DAO, Iterator {
     }
 
 
-    @Override
-    public boolean hasNext() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Object next() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void remove() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }

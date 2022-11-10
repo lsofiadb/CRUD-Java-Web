@@ -12,7 +12,7 @@ import java.util.Vector;
  *
  * @author Laura
  */
-public class CategoryDAO implements DAO, Iterator{
+public class CategoryDAO implements DAO{
 
     public CategoryDAO() {
     }
@@ -36,22 +36,5 @@ public class CategoryDAO implements DAO, Iterator{
     public void deleteRecord(Connection connection, int id) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-    @Override
-    public boolean hasNext() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Object next() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void remove() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-
-    
+  
 }

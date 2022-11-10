@@ -16,7 +16,7 @@ import java.util.Vector;
  *
  * @author Laura
  */
-public class BankDAO implements DAO, Iterator{
+public class BankDAO implements DAO{
 
     public BankDAO() {
     }
@@ -46,27 +46,36 @@ public class BankDAO implements DAO, Iterator{
 
     @Override
     public DTO updateRecord(Connection connection, DTO entity) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        BankDTO bank = new BankDTO();
+        bank.setId(1L);
+        bank.setName("Scotiabank");
+        try {
+
+             String sql = "update bank b "
+                    + " set b.bankName = ? "
+                    + " where  b.id =  ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            
+            statement.setString(1, bank.getName());
+            statement.setLong(2, bank.getId());
+
+        } catch (SQLException ex) {
+            System.out.println("ERROR" + ex);
+        }
+        return bank;
     }
 
     @Override
     public void deleteRecord(Connection connection, int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+        try {
 
-    @Override
-    public boolean hasNext() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+            String sql = "delete from bank b where b.id = ? ;";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, id);
 
-    @Override
-    public Object next() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void remove() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        } catch (SQLException ex) {
+            System.out.println("ERROR " + ex);
+        }
     }
 
    

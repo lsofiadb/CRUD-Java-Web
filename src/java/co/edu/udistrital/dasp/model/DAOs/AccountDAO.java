@@ -5,6 +5,7 @@
 package co.edu.udistrital.dasp.model.DAOs;
 
 import co.edu.udistrital.dasp.model.DTOs.AccountDTO;
+import co.edu.udistrital.dasp.model.DTOs.BankDTO;
 import co.edu.udistrital.dasp.model.DTOs.DTO;
 import co.edu.udistrital.dasp.model.DTOs.PersonDTO;
 import java.sql.Connection;
@@ -34,15 +35,18 @@ public class AccountDAO implements DAO {
         account.setPassword("letmein");
         PersonDTO owner = new PersonDTO(100L, "Laurita", "Dueñas", "calle 40", "laurita@gmail.com", "letmein");
         account.setOwner(owner);
-
+        BankDTO bank = new BankDTO(1L, "ScotiaBank");
+        account.setBank(bank);
+        
         try {
 
-            String sql = "insert into account (id, accountNumber, password, owner_id) VALUES (?, ?, ?, ?) ;";
+            String sql = "insert into account (id, accountNumber, password, owner_id, bank_id) VALUES (?, ?, ?, ?, ?) ;";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setLong(1, account.getId());
             statement.setLong(2, account.getNumber());
             statement.setString(3, account.getPassword());
             statement.setLong(4, account.getOwner().getId());
+            statement.setLong(5, account.getBank().getId());
 
         } catch (SQLException ex) {
             System.out.println("ERROR" + ex);
