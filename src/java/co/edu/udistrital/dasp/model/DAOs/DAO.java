@@ -16,5 +16,5 @@ public interface DAO {
     public Vector<DTO> getRecords(Connection connecction);
     public DTO insertRecord(Connection connection, DTO entity);
     public DTO updateRecord(Connection connection, DTO entity);
-    public void deleteRecord(Connection connection, int id);
+    public void deleteRecord(Connection connection, long id);
 }

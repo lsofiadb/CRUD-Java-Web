@@ -18,6 +18,7 @@
         max-width: 330px;
         padding: 15px;
         margin: auto;
+
     }
 
     .form-signin .checkbox {
@@ -38,7 +39,10 @@
         width:250px;
         height:250px;
     }
-
+    .form-floating{
+        text-align: start;
+        padding: 5px;
+    }
     .main{
         border-style: solid;
         border-radius:10px;
@@ -47,6 +51,7 @@
         background: rgb(211, 255, 252);
     }
 
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +59,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
+        <title>Crear Tarjeta</title>
 
         <!-- Bootstrap -->
         <link
@@ -70,48 +75,40 @@
         <script src="../assets/js/login.js"></script>
     </head>
     <body class="text-center">
+    <% 
+           String cedula = (String) request.getAttribute("cedula");
+           String nombre = (String) request.getAttribute("nombre");
+           String apellido = (String) request.getAttribute("apellido");
+           String dir = (String) request.getAttribute("dir");
+           String email = (String) request.getAttribute("email");
+           String pass = (String) request.getAttribute("pass");
+    %>
         <main class="form-signin">
             <div class="main">
                 <img class="mb-4"
                      alt=""
-                     src="https://blog.internexa.com/hubfs/Blog/Portada/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(14)-1.png"
+                     src="http://www.illeslex.com/imagenes/paginas/abogados-mallorcabfh.jpg"
                      />
-                <h1 class="h3 mb-3 fw-normal">Login</h1>
-                <form action="CardController" metod="POST">
-                    <div class="form-floating user">
+                <h1 class="h3 mb-3 fw-normal">Creacion de una Tarjeta</h1>
+                     <form action="CardController" method="POST">
+                        <div class="form-floating">
+                            <label><b>Ingrese el tipo de Tarjeta a crear</b></label><br>
+                            <input
+                                type="Text"
+                                class="form-control"
+                                id="TipoTarjeta"
+                                placeholder="Credito o Debito"
+                                name="TipoTarjeta"
+                                />
                         <input
-
-                            class="form-control"
-                            id="UsuarioLogin"
-                            name="UsuarioLogin"
-                            placeholder="Usuario"
+                            class="w-100 btn btn-lg btn-primary"
+                            id="CrearTarjeta"
+                            type="submit"
+                            value="crear"
                             />
-
-                    </div>
-                    <div class="form-floating Password">
-                        <input
-                            type="Password"
-                            class="form-control"
-                            id="PasswordLogin"
-                            name="PasswordLogin"
-                            placeholder="Contraseña"
-                            />
-
-                    </div>
-                    <input
-                        class="w-100 btn btn-lg btn-primary"
-                        id="IngresarLogin"
-                        type="submit"
-                        value="Ingresar"
-                        />
-                        <input type="hidden" name="service" value="login"/>
-                </form>
-                <form action="PersonController" method="POST">
-                    <input class="w-100 btn btn-lg btn-secundary"
-                        id="RigistraseLogin"
-                        type="submit" value="Registrarse"/>
-                    <input type="hidden" name="service" value="go-reg"/>
-                </form>
+                        <input type="hidden" name="service" value="put-card"/>
+                        <input type="hidden" name="cedula" value="<%=cedula%>"/>
+                    </form>
                 <p class="mt-5 mb-3 text-muted">&copy;&nbsp;2022</p>
             </div>
         </main>

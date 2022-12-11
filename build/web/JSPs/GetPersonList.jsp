@@ -4,6 +4,7 @@
     Author     : nixod
 --%>
 
+<%@page import="java.util.Vector"%>
 <%@page import="co.edu.udistrital.dasp.model.DTOs.PersonDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -23,7 +24,7 @@
         <h1 class="colorcito">:: LISTA USUARIOS::</h1>
         <% 
            String nombre = (String) request.getAttribute("student");
-           ArrayList<PersonDTO> lista = (ArrayList<PersonDTO>) request.getAttribute("listaP");
+           Vector<PersonDTO> lista = (Vector<PersonDTO>) request.getAttribute("listaP");
         %>
         <table>
             <tr>

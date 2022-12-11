@@ -82,60 +82,78 @@
                      src="http://www.illeslex.com/imagenes/paginas/abogados-mallorcabfh.jpg"
                      />
                 <h1 class="h3 mb-3 fw-normal">Formulario de registro</h1>
-                <div class="form-floating">
-                    <label><b>Nombre</b></label><br>
-                    <input
-                        type="Text"
-                        class="form-control"
-                        id="NombreRegistro"
-                        placeholder="Nombre"
-                        />
+                <form action='CardController' method="POST">
+                    <div class="form-floating">
+                        <label><b>Cedula</b></label><br>
+                        <input
+                            type="Text"
+                            class="form-control"
+                            id="cedula"
+                            name="cedula"
+                            placeholder="Cedula"
+                            />
 
-                </div>
-                <div class="form-floating">
-                    <label><b>Apellido</b></label><br>
-                    <input
-                        type="Text"
-                        class="form-control"
-                        id="ApellidoRegistro"
-                        placeholder="Apellido"
-                        />
-                </div>
-                <div class="form-floating">
-                    <label><b>Direccion</b></label><br>
-                    <input
-                        type="Text"
-                        class="form-control"
-                        id="DireccionRegistro"
-                        placeholder="Direccion"
-                        />
-                </div>
-                <div class="form-floating">
-                    <label><b>Correo</b></label><br>
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="emailRegistro"
-                        placeholder="Correo"
-                        />
-                </div>
+                    </div>
+                    <div class="form-floating">
+                        <label><b>Nombre</b></label><br>
+                        <input
+                            type="Text"
+                            class="form-control"
+                            id="NombreRegistro"
+                            name="NombreRegistro"
+                            placeholder="Nombre"
+                            />
 
-                <div class="form-floating Password">
-                    <label><b>Contraseña</b></label><br>
+                    </div>
+                    <div class="form-floating">
+                        <label><b>Apellido</b></label><br>
+                        <input
+                            type="Text"
+                            class="form-control"
+                            id="ApellidoRegistro"
+                            name="ApellidoRegistro"
+                            placeholder="Apellido"
+                            />
+                    </div>
+                    <div class="form-floating">
+                        <label><b>Direccion</b></label><br>
+                        <input
+                            type="Text"
+                            class="form-control"
+                            id="DireccionRegistro"
+                            name="DireccionRegistro"
+                            placeholder="Direccion"
+                            />
+                    </div>
+                    <div class="form-floating">
+                        <label><b>Correo</b></label><br>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="emailRegistro"
+                            name="emailRegistro"
+                            placeholder="Correo"
+                            />
+                    </div>
+
+                    <div class="form-floating Password">
+                        <label><b>Contraseña</b></label><br>
+                        <input
+                            type="Password"
+                            class="form-control"
+                            id="PasswordRegistro"
+                            name="PasswordRegistro"
+                            placeholder="Contraseña"
+                            />
+                    </div>
                     <input
-                        type="Password"
-                        class="form-control"
-                        id="PasswordRegistro"
-                        placeholder="Contraseña"
+                        class="w-100 btn btn-lg btn-primary"
+                        id="RegistraseRegistro"
+                        type="submit"
+                        value='Registrase'
                         />
-                </div>
-                <button
-                    class="w-100 btn btn-lg btn-primary"
-                    id="RegistraseRegistro"
-                    type="button"
-                    >
-                    Registrase
-                </button>
+                    <input type="hidden" name="service" value="put-persona"/>
+                </form>
                 <p class="mt-5 mb-3 text-muted">&copy;&nbsp;2022</p>
             </div>
         </main>

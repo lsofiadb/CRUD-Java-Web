@@ -4,9 +4,17 @@
         <servlet-name>PersonController</servlet-name>
         <servlet-class>co.edu.udistrital.dasp.controllers.PersonController</servlet-class>
     </servlet>
+    <servlet>
+         <servlet-name>CardController</servlet-name>
+         <servlet-class>co.edu.udistrital.dasp.controllers.CardController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>PersonController</servlet-name>
         <url-pattern>/PersonController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CardController</servlet-name>
+        <url-pattern>/CardController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
